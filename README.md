@@ -262,10 +262,10 @@ for i in {1..10}; do ARG=$(shuf -i 1-100 -n 100 | tr '\n' ' '); ./push_swap $ARG
 ```c
 typedef struct s_node
 {
-    int             value;   // The actual number
-    int             index;   // Rank (0 to n-1)
-    struct s_node   *next;   // Next node (circular)
-    struct s_node   *prev;   // Previous node (circular)
+    int             value;
+    int             index;
+    struct s_node   *next;
+    struct s_node   *prev;
 }   t_node;
 ```
 
